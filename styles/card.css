@@ -47,10 +47,9 @@
 }
 
 .card__img {
-	/* width: 50%; */
 	min-height: 10rem;
 	background-color: var(--accent-500);
-	background-image: url(/images/image-header-desktop.jpg);
+	background-image: url(../images/image-header-desktop.jpg);
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: top center;
