@@ -18,6 +18,10 @@ em {
 	color: var(--accent-500);
 }
 
+ul[class] {
+	list-style: none;
+}
+
 .container {
 	width: 100%;
 	display: grid;
