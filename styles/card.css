@@ -44,7 +44,7 @@
 }
 
 .card__img {
-	min-height: 10rem;
+	min-height: 14rem;
 	background-image: linear-gradient(var(--accent-500), var(--accent-500)), url(../images/image-header-desktop.jpg);
 	background-size: cover;
 	background-position: top center;
