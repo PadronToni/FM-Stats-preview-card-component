@@ -1,12 +1,9 @@
 .card {
 	display: flex;
 	flex-flow: row wrap-reverse;
-	/* justify-content: center; */
-
 
 	width: fit-content;
 	margin: 5rem;
-	max-width: 950px;
 	overflow: hidden;
 	align-content: flex-start;
 
@@ -36,9 +33,9 @@
 
 .card__description {
 	--lines: 5;
-	--line-height: 1.25em;
+	--line-height: 1.5em;
 
-	color: var(--white-700);
+	color: var(--white-600);
 
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -55,34 +52,36 @@
 	background-position: top center;
 
 	filter: brightness(0.8) saturate(0.8);
-
 }
 
 .card__goals {
 	display: flex;
 	flex-flow: row wrap;
-	margin-top: auto;
-	gap: 2em;
+	gap: 1.5em;
+	width: 100%;
+	margin-top: 2rem;
 }
 
 .card__goal-item {
-	display: flex;
-	flex-flow: column;
-	text-transform: uppercase;
+	flex: 1 1;
+}
+.card__goal-item > * {
+	display: block;
 }
 .card__goal-item > :first-child {
-	font-size: 1.5rem;
+	font-size: 1.3em;
 	font-weight: 700;
 }
 .card__goal-item > :last-child {
+	margin-top: 0.5em;
 	font-family: "Lexend Deca";
-	font-size: .75rem;
+	font-size: 0.65em;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 	color: var(--white-700);
 }
 
 @media (max-width: 600px) {
-
 	:root {
 		font-size: 14px;
 	}
@@ -100,5 +99,6 @@
 
 	.card__goals {
 		flex-flow: column nowrap;
+		margin: 0;
 	}
 }

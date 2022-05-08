@@ -5,7 +5,6 @@
 }
 
 body {
-	height: 100vh;
 	color: var(--white-500);
 
 	font-family: "Inter";
@@ -14,7 +13,8 @@ body {
 	background-color: var(--background-600);
 }
 
-strong {
+em {
+	font-style: normal;
 	color: var(--accent-500);
 }
 
